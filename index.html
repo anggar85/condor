@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css"
+      integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="/src/styles.css" />
+
+    <title>Condor Digital Agency Test</title>
+    <meta charset="UTF-8" />
+  </head>
+
+  <body>
+    <div class="container-fluid">
+      <div class="row p-3">
+        <div class="col-md-6 card p-2">
+          <div
+            id="toolbar1"
+            class="d-flex justify-content-between align-items-center"
+          >
+            <div class="p-1"><b>Pendiente</b></div>
+            <div class="p-1">
+              <input
+                placeholder="Search"
+                id="search1"
+                class="form-control"
+                type="search"
+              />
+            </div>
+            <div class="p-1"></div>
+          </div>
+          <div id="list1NewRow" class="d-flex invisibleCustom">
+            <input class="form-control" id="inputNewRow" />
+            <button id="btnCancelNewItem" class="btn btn-sm">
+              <img class="miniIcon" src="src/img/cancel.png" />
+            </button>
+            <button id="btnSaveNewItem" class="btn btn-sm">
+              <img class="miniIcon" src="src/img/check.png" />
+            </button>
+          </div>
+          <div><table class="table" id="list1"></table></div>
+          <div id="actions1">
+            <button id="addNew" class="btn btn-sm btn-block btn-gray-light">
+              <img class="miniIcon" src="src/img/plus.png" />
+            </button>
+          </div>
+        </div>
+
+        <div class="col-md-6 card p-2">
+          <div
+            id="toolbar2"
+            class="d-flex justify-content-between align-items-center"
+          >
+            <div class="p-1"><b>Completado</b></div>
+            <div class="p-1">
+              <input
+                placeholder="Search"
+                id="search2"
+                class="form-control"
+                type="search"
+              />
+            </div>
+            <div class="p-1"></div>
+          </div>
+
+          <div><table class="table" id="list2"></table></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="src/index.js"></script>
+  </body>
+</html>

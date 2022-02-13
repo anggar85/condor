@@ -1,0 +1,32 @@
+body {
+  font-family: sans-serif;
+  /* background-color: rgb(54, 54, 54) !important; */
+}
+
+.invisibleCustom {
+  display: none;
+  visibility: hidden;
+  height: 0px;
+}
+
+.btn-gray-light {
+  background-color: rgb(233, 233, 233);
+  border: 1px solid rgb(185, 185, 185);
+}
+
+.isCursor {
+  cursor: pointer;
+}
+
+.miniIcon {
+  width: 20px;
+  height: 20px;
+}
+
+#search1,
+#search2 {
+  background-image: url("/src/img/search.png");
+  background-size: 20px 20px;
+  background-repeat: no-repeat;
+  background-position: right;
+}
